@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solar System Simulator by Back2Front</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="styles/solar-system-simulator.css"/>
+		<script src="scripts/models/solar-system-simulator-model.js"></script>
+		<script src="scripts/views/solar-system-simulator-view.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="page-header">
+				<h1>Solar System Simulator <small>by team <strong>Back2Front</strong></small></h1>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div>
+					  <ul class="nav">
+						<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					  </ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div>
+				<div class="alert alert-info" role="alert" id="planetDetails">
+					<div class="info-header">
+						<span class="title"></span>&nbsp;
+						<span class="pull-right" id="alertHide">x</span>
+					</div>
+					<div class="info-body"></div>
+				</div>
+			</div>
+			<div align="center">
+				<svg id="svgContainer">
+					Sorry, your browser does not support inline SVG.
+				</svg>
+			</div>
+			<div class="action-btn-container">
+				<span class="glyphicon glyphicon-pause" aria-hidden="true" id="pause" title="Pause"></span>
+				<span class="glyphicon glyphicon-play" aria-hidden="true" style="display:none;" id="play" title="Play"></span>
+				<br>
+				<span class="glyphicon glyphicon-zoom-in" aria-hidden="true" id="zoomIn" title="zoom-in"></span>
+				<span class="glyphicon glyphicon-zoom-out" aria-hidden="true" id="zoomOut" title="zoom-out"></span>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>

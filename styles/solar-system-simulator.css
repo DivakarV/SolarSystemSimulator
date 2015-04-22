@@ -1,0 +1,107 @@
+/* body styles */
+body {
+	color: #CCCCCC;
+	background-color: #333333;
+	min-width: 1000px;
+	min-height: 900px;
+}
+
+/* header bar styles */
+.page-header {
+	margin: 0px;
+	padding: 15px;
+	background-color: #394A64;
+	color: #FFFFFF;
+	border-color: #2d3A4F;
+}
+.page-header h1 {
+	margin: 0px;
+}
+.page-header small {
+	font-size: 35%;
+	font-style: italic;
+	color: #A6A6A6;
+}
+.page-header strong {
+	color: #CCCCCC;
+}
+
+/* nav bar styles */
+.navbar {
+	min-height: 0px;
+	border-radius: 0px;
+}
+.navbar  div {
+	margin: 0px;
+	padding: 0px;
+}
+.navbar-default {
+	border: 0px;
+	background-color: #4D5C74;
+	padding-bottom: 6px;
+}
+.navbar-default li.active  a {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+.navbar .nav a {
+	padding: 5px;
+	margin: 0px;
+	display: inline;
+	top: 3px;
+}
+
+/* main styles */
+.show-details {
+	cursor: pointer;
+}
+.action-btn-container {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	margin: 15px;
+	text-align: center;
+}
+.action-btn-container * {
+	cursor: pointer;
+	font-size: 15px;
+}
+#speedSlider {
+	margin-top: 10px;
+}
+#zoomIn {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+#zoomOut {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#planetDetails {
+	position: fixed;
+	margin-top: 15px;
+	left: 15px;
+	display: none;
+}
+.info-header {
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+#alertHide {
+	margin-top: -10px;
+	margin-right: -5px;
+	cursor: pointer;
+}
+.warning-msg {
+	position: fixed;
+	right: 15px;
+	width: 360px;
+}
+.warning-msg-close {
+	margin-top: -30px;
+	margin-right: -5px;
+	cursor: pointer;
+}

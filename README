@@ -1,0 +1,25 @@
+1. Intro
+	This is a Solar System Simulator developed using HTML, Vanilla JS and Bootstrap CSS.
+	More info will be found on http://wiki.imaginea.com/Back2Front/ProjectIdeas#Solar_system_simulator
+
+2. Approach
+	For simplification we are going with assumption that planets will move around the SUN in circular path. With reference to the details present in http://hyperphysics.phy-astr.gsu.edu/hbase/solar/soldata2.html, the data have been scaled relatively (so that it fits to the screen) for planets. The data is fed to the simulator via JSON in solar-system-simulator-models.js. The same will be parsed accordingly and feed into SVG elements to show the Solar System. To create animation we are using setInterval which will paint the Solar System at regular intervals of time based on current position of the planets. clearInterval will be used for pausing the planets revolutions.
+	
+3. Interactions
+	a. Window Resize - will set min-width and min-height to the DOM, so that we don't required to write any additional functionality for realigning the elements.
+	b. Window zoom in/out - leaving this as is.
+	c. Pause/Play - providing the User Play and Pause buttons through which he/she can stop and start the Planets revolutions.
+	d. Zoom In/Out - providing the User zoom-in and zoom-out buttons through which he/she can zoom-in or zoom-out the Solar System.
+	e. Speed Slider - through which User can set the speed of the planets.
+
+4. Objects, Mappings & Why
+	a. Static Content on Page - Header, Nav Bar, SVG container and Button Panel
+		This content kept as static as it is not going to change through out the life time of the page.
+	b. Dynamic Content on Page - Solar System
+		This content will be rendered from JS by setInterval callback function by using JSON data.
+	c. SVG ?
+		Scales to any size without losing clarity (except very tiny)
+
+5. Future Enhancements
+	a. Showing Planets Info - Should show Planet info on mouse hover
+	b. Elliptical Orbits - Should change circular orbits to elliptical orbits
